@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy – fweek</title>
+<meta name="description" content="What the fweek planner stores, what it accesses in your Google account, and how to remove it.">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <img src="../icon.png" alt="">
+  <a href="../">fweek</a>
+  <nav><a href="./">Privacy</a><a href="../terms/">Terms</a></nav>
+</header>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="muted">Effective 24 November 2026. This policy covers the fweek planner apps for Windows, Linux and Android, made by the developer <a href="https://github.com/yourj4m">yourj4m</a>.</p>
+
+  <div class="panel">
+    <p><strong>In short.</strong> fweek has no server and no accounts of its own. Your planner is stored on your device. If you choose to sync it, it is stored in your own Google Drive or your own Nextcloud, and travels directly between your devices and that service. The developer never receives, sees or keeps any of your data. fweek has no advertising, no analytics and no tracking.</p>
+  </div>
+
+  <h2>What fweek stores on your device</h2>
+  <p>Everything you put into the planner: tasks, events, lists, notes, places, colours, reminders, repeat rules and settings. It also keeps on your device:</p>
+  <ul>
+    <li>daily copies of the planner (the 14 latest), so that a mistake can be undone;</li>
+    <li>the events of calendars you subscribe to, as last read;</li>
+    <li>birthdays read from a contacts file you choose to import (the file itself is not kept or sent anywhere);</li>
+    <li>the passwords and keys that connect fweek to your accounts (a Nextcloud app password, fweek’s access to your Google account, the secret addresses of subscribed calendars), in your system’s protected storage: the keyring on Linux, storage encrypted with your Windows login on Windows, the Android Keystore on Android.</li>
+  </ul>
+  <p>This data stays on your device until you delete it or remove the app.</p>
+
+  <h2>Google account and Google Drive</h2>
+  <p>Using Google is optional. If you choose “Connect Google account” in Settings → Sync, you sign in on Google’s own page in your browser; fweek never sees your Google password. fweek asks Google for these permissions and no others:</p>
+  <ul>
+    <li><strong>Your email address</strong> (<code>openid</code>, <code>email</code>). fweek shows it in its settings so you can see which account is connected, and stores it on your device for that purpose only.</li>
+    <li><strong>Its own data folder in your Google Drive</strong> (<code>https://www.googleapis.com/auth/drive.appdata</code>). This is a hidden folder that belongs to fweek alone. fweek cannot see, open or change any of your other files in Google Drive, and other apps cannot see fweek’s folder.</li>
+  </ul>
+  <h3>Why fweek needs Drive access, and what it stores there</h3>
+  <p>To keep your planner the same on all your devices and to restore it on a new one. fweek stores in its folder the changes you make to your planner: your tasks, events, lists, notes, places and the other contents listed above, the names, colours and visibility of your subscribed calendars, and your own changes to their events. It does not store there the secret addresses of your calendars, their unchanged events, your contacts file, or any password.</p>
+  <h3>How the data is accessed and protected</h3>
+  <ul>
+    <li>Your planner travels directly between your device and Google, over encrypted connections (HTTPS). It does not pass through any server of the developer or anyone else.</li>
+    <li>The files in Drive are stored by Google under Google’s own security and <a href="https://policies.google.com/privacy">privacy policy</a>. fweek does not add its own encryption to them.</li>
+    <li>fweek reads its folder only to sync your planner on your devices. Each person’s data stays in their own Google account; one account can never reach another’s.</li>
+    <li>The developer has no access to your Google account or your Drive, and does not receive any data from Google.</li>
+  </ul>
+  <h3>Limited Use</h3>
+  <p>fweek’s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. In particular, data from your Google account is used only to provide fweek’s sync feature to you; it is never sold, never used for advertising, never transferred to anyone else, and never read by people.</p>
+
+  <h2>Other services fweek talks to</h2>
+  <p>fweek connects to other services only for features you use:</p>
+  <ul>
+    <li><strong>Nextcloud</strong>, if you choose it for syncing: the same planner data as above goes to the Nextcloud server whose address you enter, under that server’s own policies.</li>
+    <li><strong>Calendars you subscribe to</strong>: fweek downloads their events from the addresses you enter (for example Google Calendar’s secret iCal address).</li>
+    <li><strong>Place suggestions</strong>, on unless you turn them off in Settings → General: as you type into a place field, the text typed so far is sent to a Photon search server (by default <a href="https://photon.komoot.io">photon.komoot.io</a>, run by komoot), with your app language and, if the task already has a place, its rough position, to suggest matching places from OpenStreetMap. Nothing else is sent, and your device’s location is never used.</li>
+    <li><strong>Links and maps</strong> you open from the planner open in your browser or map app.</li>
+  </ul>
+
+  <h2>Sharing with third parties</h2>
+  <p>The developer does not share, sell or transfer your information to anyone. The only services that receive data are the ones you choose to use, as described above.</p>
+
+  <h2>Revoking access</h2>
+  <ul>
+    <li>In fweek: Settings → Sync → <strong>Disconnect</strong>. This stops syncing on that device and withdraws fweek’s access to your Google account.</li>
+    <li>In your Google account: <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a> → fweek → remove all access.</li>
+  </ul>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li><strong>In Google Drive</strong>: disconnecting leaves fweek’s files in your Drive, so that you can connect again later. To delete them, open <a href="https://drive.google.com/drive/settings">Google Drive settings</a> → Manage apps → fweek → Options → Delete hidden app data.</li>
+    <li><strong>On a device</strong>: removing the app (on Windows, the planner itself is kept in <code>%APPDATA%\yourj4m\fweek</code> and can be deleted there; on Linux it is in <code>~/.local/share/io.github.yourj4m.weektodo</code>), or deleting the app’s data in Android’s app settings.</li>
+    <li>The developer holds no data about you, so there is nothing to delete on the developer’s side.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>fweek is not directed at children under 13 and does not knowingly collect information from them.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new date. If fweek ever asks your Google account for more than the permissions above, Google will ask for your consent again on its own page.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or about your data: <a href="https://github.com/yourj4m/fweek/issues">open an issue on GitHub</a>.</p>
+  <!-- A contact email address for the developer is to be added here by the developer. -->
+</main>
+<footer>
+  <a href="../">fweek</a> · <a href="../terms/">Terms of service</a> · <a href="https://github.com/yourj4m/fweek">Source code</a>
+</footer>
+</body>
+</html>
